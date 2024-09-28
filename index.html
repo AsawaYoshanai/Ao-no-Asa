@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>AI Model Marketplace</h1>
+
+    <h2>List New Model</h2>
+    <form id="listModelForm">
+        <input type="text" id="modelName" placeholder="Model Name" required>
+        <input type="text" id="modelDescription" placeholder="Model Description" required>
+        <input type="number" id="modelPrice" placeholder="Price (in wei)" required>
+        <button type="submit">List Model</button>
+    </form>
+
+    <h2>Available Models</h2>
+    <div id="modelsList"></div>
+
+    <h2>Rate Model</h2>
+    <form id="rateModelForm">
+        <input type="number" id="modelIdRate" placeholder="Model ID" required>
+        <input type="number" id="modelRating" placeholder="Rating (1-5)" required>
+        <button type="submit">Rate Model</button>
+    </form>
+
+    <h2>Withdraw Funds</h2>
+    <button id="withdrawButton">Withdraw</button>
+
+</body>
+</html>
